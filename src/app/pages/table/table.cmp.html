@@ -1,0 +1,5 @@
+<section class="main-container">
+    <div class="shuffle-btn" (click)="onDealCards()">Shuffle cards</div>
+    <!-- if game is on ^^ -->
+    <app-game *ngIf="players" [players]="players"></app-game>
+</section>

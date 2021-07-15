@@ -1,0 +1,19 @@
+<section class="table" *ngIf="players">
+    <div *ngFor="let player of players" class="p" [class]="player.id">
+        <img [src]="player.img" class="player-img">
+        <div class="player-card-container">
+            {{player.name}}
+            <div *ngIf="player.blind.isDealer">
+                <div *ngIf="isDealerMsg" class="dealer-msg">{{dealerMsg}}</div>
+                <div class="blind">D</div>
+            </div>
+            <img class="player-card" [class]="player.id" *ngFor="let card of player.cards" [src]="card.image" />
+            <div *ngIf="isGameOn" class="player-coins">${{player.coins.total}}</div>
+            <div *ngIf="player.blind.isSmallBlind && isGameOn" class="blind">S</div>
+            <div *ngIf="player.blind.isBigBlind && isGameOn" class="blind">B</div>
+        </div>
+    </div>
+    <div class="game-cards-container">
+        <img *ngFor="let communityCard of gameService.communityCards" class="player-card" [src]="communityCard.image" />
+    </div>
+</section>

@@ -1,0 +1,104 @@
+.table {
+    width: 80vw;
+    height: 70vh;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 20%;
+    border: 4px solid black;
+    margin: auto;
+    position: relative;
+}
+
+.p {
+    padding: 5px;
+    position: absolute;
+}
+
+.player-img {
+    height: 80px;
+    width: 80px;
+}
+
+.player-card-container {
+    position: absolute;
+    display: flex;
+    width: fit-content;
+}
+
+.player-card {
+    height: 75px;
+    width: 55px;
+    margin-right: 2px;
+}
+
+.player-coins {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    color: yellow;
+}
+
+.game-cards-container {
+    display: flex;
+    position: absolute;
+    left: 36%;
+    bottom: 40%;
+}
+
+.dealer-msg {
+    padding: 2px;
+    position: absolute;
+    top: -70px;
+    left: 70px;
+    background-color: white;
+}
+
+// .dealer-deck {
+//     position: absolute;
+//     left: 85px;
+//     bottom: 0px;
+// }
+
+.blind {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: -12px;
+}
+
+.p1 {
+    bottom: 0;
+    right: 20%;
+}
+
+.p2 {
+    bottom: 45%;
+    right: 0;
+}
+
+.p3 {
+    top: 0;
+    right: 20%;
+}
+
+.p4 {
+    top: 0;
+    left: 20%;
+}
+
+.p5 {
+    bottom: 45%;
+    left: 0;
+}
+
+.p6 {
+    bottom: 0;
+    left: 20%;
+}
